@@ -1,0 +1,25 @@
+post http://localhost:3000/todos/
+Content-Type: application/json
+
+{
+ "id": 7,
+ "todo": "Finalize  theme",
+ "priority": "OW",
+ "status": "TO DO",
+ "category": "HOME",
+ "dueDate": "2021-02-22"
+}
+
+###
+get http://localhost:3000/todos/?status=TO%20DO
+
+###
+get http://localhost:3000/agenda/?date=2021-4-22
+
+###
+put http://localhost:3000/todos/6/
+Content-Type: application/json
+
+{
+"stats": "DONE"
+}
